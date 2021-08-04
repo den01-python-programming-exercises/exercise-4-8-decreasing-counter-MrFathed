@@ -9,5 +9,10 @@ class DecreasingCounter:
     def decrement(self):
         # write the method implementation here
         # the aim is to decrement the value of the counter by one
+        if self.value > 0:
+            self.value = self.value - 1
+
+    def reset(self):
+        self.value = 0
 
     # and the other methods go here
